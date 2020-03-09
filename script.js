@@ -60,10 +60,10 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model', './assets/articuno/scene.gltf');
-        model.setAttribute('rotation', '0 180 0');
+        model.setAttribute('rotation', '0 0 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '0.12 0.12 0.12');
-
+        model.setAttribute('scale', '0.08 0.08 0.08');
+        model.setAttribute('position', {x: 0, y: -1, z: 0});
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
         });
