@@ -38,7 +38,7 @@ var models = [
     },
     {
         url: './assets/dragonite/scene.gltf',
-        scale: '0.08 0.08 0.08',
+        scale: '0.15 0.15 0.15',
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
     },
@@ -79,7 +79,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        setModel(models[1], model);
+        setModel(models[0], model);
         //model.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
         //model.setAttribute('rotation', '0 0 0');         
         model.setAttribute('animation-mixer', '');
