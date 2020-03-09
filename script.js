@@ -62,7 +62,7 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './assets/articuno/scene.gltf');
         model.setAttribute('rotation', '0 0 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '0.08 0.08 0.08');
+        model.setAttribute('scale', '0.11 0.11 0.11');
         model.setAttribute('position', {x: 0, y: -0.1, z: 0});
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
