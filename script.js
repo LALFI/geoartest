@@ -29,13 +29,7 @@ function staticLoadPlaces() {
     ];
 }
 
-var models = [
-    {
-        url: './assets/magnemite/scene.gltf',
-        scale: '0.15 0.15 0.15',
-        info: 'Magnemite, Lv. 5, HP 10/10',
-        rotation: '0 180 0',
-    },
+var models = [    
     {
         url: './assets/articuno/scene.gltf',
         scale: '0.2 0.2 0.2',
@@ -48,9 +42,15 @@ var models = [
         rotation: '0 180 0',
         info: 'Dragonite, Lv. 99, HP 150/150',
     },
+     {
+        url: './assets/magnemite/scene.gltf',
+        scale: '0.15 0.15 0.15',
+        info: 'Magnemite, Lv. 5, HP 10/10',
+        rotation: '0 180 0',
+    },
 ];
 
-var modelIndex = 0;
+
 var setModel = function (model, entity) {
     if (model.scale) {
         entity.setAttribute('scale', model.scale);
@@ -79,7 +79,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        setModel(models[modelIndex], model);
+        setModel(models[1], model);
         //model.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
         //model.setAttribute('rotation', '0 0 0');         
         model.setAttribute('animation-mixer', '');
