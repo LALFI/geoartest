@@ -6,24 +6,17 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: 'CIOp',
-            location: {
-                lat: -34.886738,
-                lng: -58.006384,
+            name: 'ventana',
+            location: {       
+                lat: -34.887071,
+                lng: -58.006420,
             }             
         },
          {
-            name: 'CETMIC',
+            name: 'parqueadero',
             location: {
-                lat: -34.886393,
-                lng: -58.007050,
-            }             
-        },
-         {
-            name: 'Entrada',
-            location: {
-                lat: -34.884674,
-                lng: -58.004883,
+                lat: -34.886749,
+                lng: -58.006163,
             }             
         },
     ];
