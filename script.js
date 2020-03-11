@@ -8,22 +8,22 @@ function staticLoadPlaces() {
         {
             name: 'ventana',
             location: {       
-                lat: -34.887071,
-                lng: -58.006420,
+                lat: -34.887049,
+                lng: -58.006411,
             }             
         },
          {
             name: 'parqueadero',
             location: {
-                lat: -34.886749,
-                lng: -58.006163,
+                lat: -34.886793,
+                lng: -58.006164,
             }             
         },
           {
             name: 'cocina',
             location: {
-                lat: -34.886943,
-                lng: -58.006699,
+                lat: -34.886851,
+                lng: -58.006701,
             }             
         },        
     ];
@@ -60,7 +60,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('gltf-model', './assets/panuelo/panueloLow2.glb');
+        model.setAttribute('gltf-model', './assets/panuelo/panueloLow3.glb');
         model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', '5 5 5');
