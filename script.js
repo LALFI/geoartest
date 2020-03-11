@@ -66,7 +66,7 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './assets/articuno/scene.gltf');
         model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('position', {x: 0, y: ${altura}, z: 0});
+        //model.setAttribute('position', {x: 0, y: ${altura}, z: 0});
         model.setAttribute('scale', '0.11 0.11 0.11');
         //
         model.addEventListener('loaded', () => {
