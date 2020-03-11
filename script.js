@@ -60,7 +60,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('gltf-model', './assets/panuelo/panueloLow4.glb');
+        model.setAttribute('gltf-model', './assets/panuelo/panueloLow5.glb');
         model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
         model.setAttribute('scale', '0.8 0.8 0.8');
