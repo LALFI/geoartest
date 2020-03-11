@@ -22,8 +22,8 @@ function staticLoadPlaces() {
           {
             name: 'cocina',
             location: {
-                lat: -34.887123,
-                lng: -58.006410,
+                lat: -34.886943,
+                lng: -58.006699,
             }             
         },        
     ];
