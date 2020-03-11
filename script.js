@@ -10,6 +10,7 @@ function staticLoadPlaces() {
             location: {       
                 lat: -34.887071,
                 lng: -58.006420,
+                alt: 0,
             }             
         },
          {
@@ -17,6 +18,7 @@ function staticLoadPlaces() {
             location: {
                 lat: -34.886749,
                 lng: -58.006163,
+                alt: 50,
             }             
         },
     ];
@@ -49,13 +51,14 @@ function renderPlaces(places) {
     places.forEach((place) => {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
+        let altura = place.location.alt;
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('gltf-model', './assets/articuno/scene.gltf');
         model.setAttribute('rotation', '0 0 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('position', {x: 0, y: 1.5, z: 0});
+        model.setAttribute('position', {x: 0, y: ${altura}, z: 0});
         model.setAttribute('scale', '0.11 0.11 0.11');
         //
         model.addEventListener('loaded', () => {
