@@ -63,7 +63,7 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './assets/panuelo/panueloLow3.glb');
         model.setAttribute('rotation', '0 180 0');
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '0.12 0.12 0.12');
+        model.setAttribute('scale', '0.8 0.8 0.8');
         
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
